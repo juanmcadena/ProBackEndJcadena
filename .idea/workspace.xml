@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae4905e-e30b-40bd-8cf8-b5047e7347f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/model/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/repository/ViewsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/exception/CulturemediaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/exception/DurationNotValidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/exception/VideoNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +65,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "R4-Creating-Video-views-Structures",
+    "git-widget-placeholder": "R5-Creating-Exceptions-Structures",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
