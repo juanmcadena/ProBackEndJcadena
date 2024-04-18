@@ -13,12 +13,12 @@ public class CulturemediaImplementation implements  CulturemediaService{
     }
 
     @Override
-    public Video add(Video video) {
+    public Video save(Video video) {
         return null;
     }
 
     @Override
-    public View add(View view) {
+    public View save(View view) {
         return null;
     }
 }
