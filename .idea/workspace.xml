@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae4905e-e30b-40bd-8cf8-b5047e7347f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/exception/CulturemediaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/exception/DurationNotValidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/exception/VideoNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/culturemedia/repository/impl/ViewsRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +63,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "R5-Creating-Exceptions-Structures",
+    "git-widget-placeholder": "R6-Integrating-repositories-implementations",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
@@ -98,6 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712804748072</updated>
       <workItem from="1712804749901" duration="6589000" />
+      <workItem from="1713395089829" duration="3599000" />
     </task>
     <servers />
   </component>
