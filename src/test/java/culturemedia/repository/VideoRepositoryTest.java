@@ -18,8 +18,8 @@ class VideoRepositoryTest {
 
         videoRepository = new VideoRepositoryImpl();
 
-        List<Video> videos = List.of(new Video("01", "Título 1", "----", 4.6),
-                new Video("02", "Título 2", "----", 5.4),
+        List<Video> videos = List.of(new Video("01", "Título 1", "----", 4.5),
+                new Video("02", "Título 2", "----", 5.5),
                 new Video("03", "Título 3", "----", 4.4),
                 new Video("04", "Título 4", "----", 3.5),
                 new Video("05", "Clic", "----", 5.7),
