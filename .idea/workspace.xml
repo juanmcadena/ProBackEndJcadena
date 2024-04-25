@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae4905e-e30b-40bd-8cf8-b5047e7347f9" name="Changes" comment="Create Video Repository Test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/culturemedia/service/CulturemediaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/culturemedia/repository/impl/VideoRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/culturemedia/repository/impl/VideoRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/culturemedia/repository/VideoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/culturemedia/repository/VideoRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/culturemedia/service/CulturemediaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/culturemedia/service/CulturemediaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/culturemedia/service/impl/CulturemediaImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/culturemedia/service/impl/CulturemediaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,101 +61,115 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.VideoRepositoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VideoRepositoryTest.when_FindByDuration_does_not_match_any_video_an_empty_list_should_be_returned_successfully.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VideoRepositoryTest.when_FindByDuration_only_videos_between_the_range_should_be_returned_successfully.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VideoRepositoryTest.when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;R7-Adding–video-repository-test-cases&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CulturemediaServiceTest.exceptionsTesting.executor": "Run",
+    "JUnit.CulturemediaServiceTest.executor": "Run",
+    "JUnit.CulturemediaServiceTest.when_FindAll_all_videos_should_be_returned_successfully.executor": "Run",
+    "JUnit.CulturemediaServiceTest.when_FindAll_does_not_find_any_video_an_VideoNotFoundException_should_be_thrown_successfully.executor": "Run",
+    "JUnit.VideoRepositoryTest.executor": "Run",
+    "JUnit.VideoRepositoryTest.when_FindByDuration_does_not_match_any_video_an_empty_list_should_be_returned_successfully.executor": "Run",
+    "JUnit.VideoRepositoryTest.when_FindByDuration_only_videos_between_the_range_should_be_returned_successfully.executor": "Run",
+    "JUnit.VideoRepositoryTest.when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully.executor": "Run",
+    "JUnit.culturemedia in culturemedia.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "R8-Adding–business-logic-to-the-service,",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\JUAN\Documents\5  UDEA\Ingenieria de Sistemas\2024-1 3 er Semestre\Tec Programacio y Laboratorio\Taller 3\Proyecto Backend" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VideoRepositoryTest">
-    <configuration name="VideoRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CulturemediaServiceTest.exceptionsTesting">
+    <configuration name="CulturemediaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="culturemedia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="culturemedia.repository.*" />
+          <option name="PATTERN" value="culturemedia.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="culturemedia.repository" />
-      <option name="MAIN_CLASS_NAME" value="culturemedia.repository.VideoRepositoryTest" />
+      <option name="PACKAGE_NAME" value="culturemedia.service" />
+      <option name="MAIN_CLASS_NAME" value="culturemedia.service.CulturemediaServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VideoRepositoryTest.when_FindByDuration_does_not_match_any_video_an_empty_list_should_be_returned_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CulturemediaServiceTest.exceptionsTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="culturemedia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="culturemedia.repository.*" />
+          <option name="PATTERN" value="culturemedia.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="culturemedia.repository" />
-      <option name="MAIN_CLASS_NAME" value="culturemedia.repository.VideoRepositoryTest" />
-      <option name="METHOD_NAME" value="when_FindByDuration_does_not_match_any_video_an_empty_list_should_be_returned_successfully" />
+      <option name="PACKAGE_NAME" value="culturemedia.service" />
+      <option name="MAIN_CLASS_NAME" value="culturemedia.service.CulturemediaServiceTest" />
+      <option name="METHOD_NAME" value="exceptionsTesting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VideoRepositoryTest.when_FindByDuration_only_videos_between_the_range_should_be_returned_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CulturemediaServiceTest.when_FindAll_all_videos_should_be_returned_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="culturemedia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="culturemedia.repository.*" />
+          <option name="PATTERN" value="culturemedia.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="culturemedia.repository" />
-      <option name="MAIN_CLASS_NAME" value="culturemedia.repository.VideoRepositoryTest" />
-      <option name="METHOD_NAME" value="when_FindByDuration_only_videos_between_the_range_should_be_returned_successfully" />
+      <option name="PACKAGE_NAME" value="culturemedia.service" />
+      <option name="MAIN_CLASS_NAME" value="culturemedia.service.CulturemediaServiceTest" />
+      <option name="METHOD_NAME" value="when_FindAll_all_videos_should_be_returned_successfully" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VideoRepositoryTest.when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CulturemediaServiceTest.when_FindAll_does_not_find_any_video_an_VideoNotFoundException_should_be_thrown_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="culturemedia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="culturemedia.repository.*" />
+          <option name="PATTERN" value="culturemedia.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="culturemedia.repository" />
-      <option name="MAIN_CLASS_NAME" value="culturemedia.repository.VideoRepositoryTest" />
-      <option name="METHOD_NAME" value="when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully" />
+      <option name="PACKAGE_NAME" value="culturemedia.service" />
+      <option name="MAIN_CLASS_NAME" value="culturemedia.service.CulturemediaServiceTest" />
+      <option name="METHOD_NAME" value="when_FindAll_does_not_find_any_video_an_VideoNotFoundException_should_be_thrown_successfully" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="culturemedia in culturemedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="culturemedia" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/culturemedia" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VideoRepositoryTest" />
-        <item itemvalue="JUnit.VideoRepositoryTest.when_FindByDuration_does_not_match_any_video_an_empty_list_should_be_returned_successfully" />
-        <item itemvalue="JUnit.VideoRepositoryTest.when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully" />
-        <item itemvalue="JUnit.VideoRepositoryTest.when_FindByDuration_only_videos_between_the_range_should_be_returned_successfully" />
+        <item itemvalue="JUnit.CulturemediaServiceTest.exceptionsTesting" />
+        <item itemvalue="JUnit.CulturemediaServiceTest.when_FindAll_all_videos_should_be_returned_successfully" />
+        <item itemvalue="JUnit.CulturemediaServiceTest" />
+        <item itemvalue="JUnit.CulturemediaServiceTest.when_FindAll_does_not_find_any_video_an_VideoNotFoundException_should_be_thrown_successfully" />
+        <item itemvalue="JUnit.culturemedia in culturemedia" />
       </list>
     </recent_temporary>
   </component>
@@ -204,5 +219,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Video Repository Test" />
     <option name="LAST_COMMIT_MESSAGE" value="Create Video Repository Test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/culturemedia/service/CulturemediaServiceTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/culturemedia/service/CulturemediaServiceTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/culturemedia/service/impl/CulturemediaServiceImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
