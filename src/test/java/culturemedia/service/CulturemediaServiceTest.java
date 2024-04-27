@@ -1,5 +1,6 @@
 package culturemedia.service;
 
+import culturemedia.exception.DurationNotValidException;
 import culturemedia.exception.VideoNotFoundException;
 import culturemedia.model.Video;
 import culturemedia.repository.VideoRepository;
@@ -12,8 +13,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 class CulturemediaServiceTest {
     private CulturemediaService culturemediaService;
@@ -51,8 +51,20 @@ class CulturemediaServiceTest {
                 VideoNotFoundException thrown = assertThrows(VideoNotFoundException.class, ()-> culturemediaService.findAllVideo());
     }
 
+@Test
+    void when_FindAll_By_Title_does_not_find_any_video_an_VideoNotFoundException_should_be_thrown_successfully() throws VideoNotFoundException{
+        var videos = new Video ("01", "juan", "Horror", 4.6);
+        culturemediaService.save(videos);
 
+        assertThrows(VideoNotFoundException.class, ()-> culturemediaService.findAllVideo("juanC"));
+    }
 
+    @Test
+    void when_FindAll_By_Durations_does_not_find_any_video_an_VideoNotFoundException_should_be_thrown_successfully() throws VideoNotFoundException{
+        var videos = new Video ("01", "juan", "Horror", 4.6);
+        culturemediaService.save(videos);
+        assertThrows(DurationNotValidException.class, ()-> culturemediaService.findAllVideo( 4.7, 5.0));
+    }
 }
 
 
