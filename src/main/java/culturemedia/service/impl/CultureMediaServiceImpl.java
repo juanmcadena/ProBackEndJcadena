@@ -64,4 +64,9 @@ public class CultureMediaServiceImpl implements CultureMediaService {
         }
         return videos;
     }
+
+    @Override
+    public List<Video> findAll() {
+        return null;
+    }
 }
