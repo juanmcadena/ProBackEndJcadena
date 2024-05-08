@@ -19,7 +19,7 @@ public class CultureMediaController {
     public List<Video> findAllVideos() throws VideoNotFoundException {
         return cultureMediaService.findAll();
         
-        return videos;
+  
     }
 
 
