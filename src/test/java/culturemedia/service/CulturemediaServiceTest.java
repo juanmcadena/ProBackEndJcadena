@@ -7,7 +7,7 @@ import culturemedia.repository.VideoRepository;
 import culturemedia.repository.ViewsRepository;
 import culturemedia.repository.impl.VideoRepositoryImpl;
 import culturemedia.repository.impl.ViewsRepositoryImpl;
-import culturemedia.service.impl.CulturemediaServiceImpl;
+import culturemedia.service.impl.CultureMediaServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,14 +16,14 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CulturemediaServiceTest {
-    private CulturemediaService culturemediaService;
+    private CultureMediaService culturemediaService;
 
     @BeforeEach
     void init() {
         VideoRepository videoRepository = new VideoRepositoryImpl();
         ViewsRepository viewsRepository = new ViewsRepositoryImpl();
 
-        culturemediaService = new CulturemediaServiceImpl(videoRepository, viewsRepository);
+        culturemediaService = new CultureMediaServiceImpl(videoRepository, viewsRepository);
     }
     private void createVideos() throws VideoNotFoundException {
         List<Video> videos = List.of(new Video("01", "Título 1", "----", 4.5),
