@@ -4,7 +4,7 @@ import java.util.List;
 
 import culturemedia.exception.VideoNotFoundException;
 import culturemedia.model.Video;
-import culturemedia.service.impl.CultureMediaServiceImpl;
+import culturemedia.service.CultureMediaService;
 
 public class CultureMediaController {
 
