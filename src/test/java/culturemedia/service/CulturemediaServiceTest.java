@@ -10,14 +10,14 @@ import culturemedia.repository.impl.ViewsRepositoryImpl;
 import culturemedia.service.impl.CultureMediaServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import org.mockito.Mockito;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.doReturn;
 
 class CulturemediaServiceTest {
     private CultureMediaService culturemediaService;
-
+    private VideoRepository videoRepository = Mockito.mock();
     @BeforeEach
     void init() {
         VideoRepository videoRepository = new VideoRepositoryImpl();
@@ -65,6 +65,24 @@ class CulturemediaServiceTest {
         culturemediaService.save(videos);
         assertThrows(DurationNotValidException.class, ()-> culturemediaService.findAllVideo( 4.7, 5.0));
     }
+
+    @Test
+    void  when_findAll_all_video_returned_succesfully() throws VideoNotFoundException{
+        createVideos();
+        List<Video> videos = culturemediaService.findAllVideo();
+        doReturn(videos).when(videoRepository).findAll();
+        assertEquals(6, videos.size());
+    }
+
+    @Test
+    void when_find_by_title_should_return_match_video() throws VideoNotFoundException{
+        createVideos();
+        List<Video> videos = culturemediaService.findAllVideo();
+        doReturn(videos).when(videoRepository).find("Título 2");
+
+    }
+
+
 }
 
 
