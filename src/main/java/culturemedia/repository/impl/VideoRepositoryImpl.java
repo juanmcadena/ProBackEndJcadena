@@ -12,6 +12,7 @@ public class VideoRepositoryImpl implements VideoRepository {
 
     public VideoRepositoryImpl() {
         videos = new ArrayList<>();
+        videos.add(new Video("1", "Jmcz", "version1 ", 4.2));
     }
 
     @Override
